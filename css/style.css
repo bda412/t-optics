@@ -113,6 +113,7 @@ nav li a {
 .info {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .info-text {
@@ -136,4 +137,29 @@ nav li a {
     line-height: 1.4;
 }
 
+
 /*-----FOOTER-----*/
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+footer .container {
+    background-color: azure;
+}
+
+.footer-text {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text img {
+    height: 1.5rem;
+}
+
+.footer-text h4 {
+    color: black;
+    margin-left: 1rem;
+}

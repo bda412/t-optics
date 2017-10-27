@@ -70,3 +70,43 @@ nav li a {
     font-weight: bold;
     line-height: 1.2;
 }
+
+
+/*-----SERVICES-----*/
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    margin: 3rem 3rem;
+    width: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item img {
+    object-fit: contain;
+    width: 5rem;
+}
+
+#paper {
+    width: 3.5rem;
+}
+
+.service-item h4 {
+    color: black;
+    text-align: center;
+}
+
+
+/*-----INFO SECTION-----*/

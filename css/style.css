@@ -1,8 +1,6 @@
 html {
     font-size: 18px;
-    line-height: 1.4;
     font-family: Helvetica, sans-serif;
-    background-color: white;
 }
 
 h4 {
@@ -30,6 +28,7 @@ header nav {
     background-color: cadetblue;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .brand {
@@ -53,6 +52,10 @@ nav li a {
     color: white;
     text-decoration: none;
     margin: 1rem 2rem 1rem 0;
+}
+
+.mobile {
+    display: none;
 }
 
 .banner {
@@ -162,4 +165,110 @@ footer .container {
 .footer-text h4 {
     color: black;
     margin-left: 1rem;
+}
+
+
+/*-----MEDIA QUERIES-----*/
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 100%;
+    }    
+    
+    header {
+        height: 22rem;
+    }
+    
+    header nav {
+        margin-top: 0;
+    }
+    
+    .banner {
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+    
+    .banner h1 {
+        padding: 0.75rem 4rem;
+        font-size: 1.33rem;
+    }
+}
+
+
+@media only screen and (max-width:470px) {
+    header {
+        background-position: 20%;
+        height: 17rem;
+    }
+    
+    .brand h4 {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+    
+    .standard {
+        display: none;
+    }
+    
+    .banner {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 9rem;
+    }
+    
+    .banner h1 {
+        padding: 1rem auto;
+    }
+    
+    .services {
+        flex-direction: column;
+        align-items: center;
+        margin: 3.77rem 0;
+    }
+    
+    .service-item {
+        margin: 0.77rem;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .service-item h4 {
+        margin-top: 1rem;
+        font-size: 0.77rem;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .info-text {
+        width: 100%;
+        align-items: center;
+        margin: 0 0 4rem 0;
+    }
+    
+    .info-text h3 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+    }
+    
+    .info-text p {
+        font-size: 0.77rem;
+    }
+    
+    .footer-text{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-text h4{
+        display: none;
+    }
 }
